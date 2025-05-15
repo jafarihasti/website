@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32*32" href="./assets/images/favicon-32x32.png">
+    <title>Your Age</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main calculator">
+        <div class="calculator__container">
+            <div class="calculator__user-input">
+                <div class="calculator__input-block input-block">
+                    <p class="input-block__text">Day</p>
+                    <input class="input-block__input input-days" type="number" placeholder="DD" min="1">
+                    <p class="input-block__text-error">text error</p>
+                </div>
+                <div class="calculator__input-block input-block">
+                    <p class="input-block__text">Month</p>
+                    <input class="input-block__input input-months" type="number" placeholder="MM" min="1">
+                    <p class="input-block__text-error">text error</p>
+                </div>
+                <div class="calculator__input-block input-block">
+                    <p class="input-block__text">Year</p>
+                    <input class="input-block__input input-years" type="number" placeholder="YY" min="1">
+                    <p class="input-block__text-error">text error</p>
+                </div>
+                <button class="calculator__user-input-btn"></button>
+            </div>
+
+            <div class="calculator__output output">
+                <div class="output__text output-years"> <span>- -</span>Years</div>
+                <div class="output__text output-months"> <span>- -</span>Months</div>
+                <div class="output__text output-days"> <span>- -</span>Days</div> 
+            </div>
+        </div>
+    </main>
+</body>
+</html>

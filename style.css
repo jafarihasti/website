@@ -1,0 +1,282 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@font-face{
+    font-family:'shabnam' ;
+    src: url(font/Shabnam-Medium-WOL.ttf);
+  }
+  
+  @font-face{
+    font-family:'bold' ;
+    src: url(font/Vazir-Bold.ttf);
+  }
+  
+  
+  @font-face{
+    font-family:'shabnamttf' ;
+    src: url(font/Shabnam-Thin-WOL.ttf);
+  }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e64af;
+    padding: 50px;
+    direction: rtl;
+    color: white;
+    font-family: 'bold';
+    
+}
+
+.imge{
+    width: 20%;
+    height: 48%;
+    position: absolute;
+    top: 207px;
+    left: 292PX;
+  
+}
+
+
+.container {
+    width: 80%;
+    background-color: #3255b13b;
+    height: 550px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    padding: 29px 78px;
+    margin: 35px auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+li{
+    list-style-type: none;
+  font-family: 'bold';
+  font-size: 17px;
+}
+
+.logo {
+    font-family:'medium';
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.tagline {
+    font-family: 'medium';
+    font-size: 10px;
+    color: #FFD700;
+}
+
+.Menu{
+    display: flex;
+}
+
+.Menu{
+    gap: 40px;
+    margin-inline-end: 50px;
+    font-family: 'aviny';
+
+}
+
+.second{
+    display: flex;
+    gap: 40px;
+
+}
+
+.btn-account {
+    padding: 6px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: none;
+  }
+
+
+.btn-outline {
+    background: none;
+    border: 2px solid rgb(227, 227, 10);
+    padding: 4px 44px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-right: 5px;
+    color: white;
+}
+
+main{
+    
+    font-family:'noora' ;
+}
+
+.btn-fill{
+    padding: 4px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: none;
+    font-family: 'damavand';
+}
+
+.btn-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.content {
+    padding: -22px;
+  max-width: 535px;
+  margin-top: 50px;
+}
+
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    font-family: 'noora';
+}
+
+.content h2 {
+    display: inline-block;
+    font-size: 2rem;
+    color:white;
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-right: 20px;
+    font-size: 24px;
+    font-family: 'noora';
+}
+
+.content h2::before{
+    content: "";
+    position: absolute;
+    right: 90px;
+    top: 65%;
+    transform: translateY(-50%);
+    width: 186%;
+    height: 3px;
+    background-color: white;
+  
+}
+
+
+.content p {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: -11px;
+}
+
+
+
+.dots{
+    position: absolute;
+    background-color:#ffffff6b;
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px white;
+    animation: updown 4s ease-in-out infinite;
+}
+
+@keyframes updown{
+    0% , 100%{
+transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+}
+
+.dots:nth-child(1){
+    margin-right: 70%;
+    width: 25px;
+    height: 25px;
+}
+
+.dots:nth-child(2){
+
+    margin-right: 49%;
+    width: 34px;
+    height: 33px;
+    margin-top: 2%;
+  
+    
+}
+
+.dots:nth-child(3){
+    left: 44%;
+    margin-top: -19%;
+  }
+
+  .corner-top-right{
+    position: absolute;
+    background: #FFD700;
+    width: 12%;
+    height: 20%;
+    border-bottom-left-radius: 95%;
+    right: -3px;
+    top: -9px;
+    overflow: hidden;
+  }
+
+  .bottom-left {
+    position: absolute;
+    background: #f4f3ee;
+    width: 12%;
+    height: 20%;
+    border-top-right-radius: 95%;
+    bottom: -3px; /* موقعیت نیم‌دایره در گوشه پایین سمت چپ */
+    left: -9px;
+    overflow: hidden;
+  }
+  .project{
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  }
+
+
+.project-ha button{
+    border: 1px solid white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    background: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 73px;
+    margin-top: -7px;
+}
+
+.project-ha button:hover{
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
+    color: #e8e3e1;
+    cursor: pointer;
+}
